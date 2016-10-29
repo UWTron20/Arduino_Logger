@@ -1,6 +1,5 @@
 import numpy as npy
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 
 from random import randint as rand
 
