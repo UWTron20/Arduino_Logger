@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>654e317c-39ca-4b44-96db-2de45e5f1dff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Data.Visuals\Demo\BarCharts\Humidity\HumLiveUpdate.py</StartupFile>
+    <StartupFile>Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,20 +23,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AcquisitionLogic.py" />
-    <Compile Include="Data.Visuals\Demo\BarCharts\Humidity\HumLiveUpdate.py">
+    <Compile Include="Data.Repository\Test\ConnectionTestToLAN.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Data.Visuals\Demo\BarCharts\Humidity\HumOverWeek.py">
+    <Compile Include="Data.Repository\Test\mysqlConnectorTrial.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumLiveUpdate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumOverWeek.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data.Visuals\Demo\BarCharts\" />
-    <Folder Include="Data.Visuals\Demo\BarCharts\Humidity\" />
+    <Folder Include="Data.Repository\Test\" />
+    <Folder Include="Data.Visuals\Demo\DynamicCharts\" />
+    <Folder Include="Data.Visuals\Demo\DynamicCharts\Humidity\" />
     <Folder Include="Data.Visuals\Demo\" />
     <Folder Include="Humidity\" />
     <Folder Include="Moisture\" />
     <Folder Include="Data.Visuals\" />
+    <Folder Include="Data.Repository\" />
     <Folder Include="Temperature\" />
   </ItemGroup>
   <PropertyGroup>
