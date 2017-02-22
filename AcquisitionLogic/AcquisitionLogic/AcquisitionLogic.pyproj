@@ -38,6 +38,12 @@
     <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Utility\Gravity\GravitationForces.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\Kinematics\Kinematics.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data.Repository\Test\" />
@@ -48,7 +54,11 @@
     <Folder Include="Moisture\" />
     <Folder Include="Data.Visuals\" />
     <Folder Include="Data.Repository\" />
+    <Folder Include="Utility\" />
     <Folder Include="Temperature\" />
+    <Folder Include="Utility\Kinematics\" />
+    <Folder Include="Utility\Gravity\" />
+    <Folder Include="Utility\Vector Helper\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
