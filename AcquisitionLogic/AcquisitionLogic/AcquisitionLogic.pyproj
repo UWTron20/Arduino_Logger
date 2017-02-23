@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>654e317c-39ca-4b44-96db-2de45e5f1dff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py</StartupFile>
+    <StartupFile>SpeechRecognition.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -36,6 +36,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpeechRecognition.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Utility\Gravity\GravitationForces.py">
