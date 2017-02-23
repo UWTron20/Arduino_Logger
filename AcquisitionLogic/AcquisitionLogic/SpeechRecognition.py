@@ -14,7 +14,7 @@ class SpeechRecognition(object):
     def ReadBackLastCommand(self):
         if self.RecentCommandAudio != None:        
             try:
-                print("Sphinx thinks you said " + self.r.recognize_sphinx(self.RecentCommandAudio))
+                print(self.r.recognize_sphinx(self.RecentCommandAudio))
             except sr.UnknownValueError:
                 print("Sphinx could not understand audio")
             except sr.RequestError as e:
