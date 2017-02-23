@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>654e317c-39ca-4b44-96db-2de45e5f1dff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SpeechRecognition.py</StartupFile>
+    <StartupFile>Speech System\Iya\Decoder.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,7 +38,10 @@
     <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SpeechRecognition.py">
+    <Compile Include="Speech System\Iya\Decoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Speech System\SpeechRecognition.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Utility\Gravity\GravitationForces.py">
@@ -57,6 +60,8 @@
     <Folder Include="Moisture\" />
     <Folder Include="Data.Visuals\" />
     <Folder Include="Data.Repository\" />
+    <Folder Include="Speech System\" />
+    <Folder Include="Speech System\Iya\" />
     <Folder Include="Utility\" />
     <Folder Include="Temperature\" />
     <Folder Include="Utility\Kinematics\" />

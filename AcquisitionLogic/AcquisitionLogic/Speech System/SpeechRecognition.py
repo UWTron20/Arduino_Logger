@@ -21,6 +21,11 @@ class SpeechRecognition(object):
                 print("Sphinx error; {0}".format(e)) 
         else:
             print("No Command Was Said")
+    def GetCommandToString(self):
+        if self.RecentCommandAudio != None:
+            return self.r.recognize_sphinx(self.RecentCommandAudio)
+        else:
+            return False
 
 while True:
     Sp = SpeechRecognition()
