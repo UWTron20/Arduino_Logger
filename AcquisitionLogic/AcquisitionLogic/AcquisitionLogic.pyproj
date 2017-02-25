@@ -38,6 +38,18 @@
     <Compile Include="Data.Visuals\Demo\DynamicCharts\Humidity\HumSteadyUpdate.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MODs\Beam.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MODs\Force.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MODs\Optimizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MODs\Pin.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Speech System\Iya\Decoder.py">
       <SubType>Code</SubType>
     </Compile>
@@ -60,6 +72,7 @@
     <Folder Include="Moisture\" />
     <Folder Include="Data.Visuals\" />
     <Folder Include="Data.Repository\" />
+    <Folder Include="MODs\" />
     <Folder Include="Speech System\" />
     <Folder Include="Speech System\Iya\" />
     <Folder Include="Utility\" />
