@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>654e317c-39ca-4b44-96db-2de45e5f1dff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Speech System\Iya\Decoder.py</StartupFile>
+    <StartupFile>MODs\Optimizer.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
