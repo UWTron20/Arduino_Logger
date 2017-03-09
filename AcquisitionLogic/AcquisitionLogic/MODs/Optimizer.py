@@ -72,16 +72,32 @@ def PlateTear(Beam, Force):
     k4 = Force.strength / 2
     return k4 / (Beam.ultimateShearStress * Beam.height)
 
+def MaximumWeight(*args):
+    m = 2000000
+    for arg in args:
+        if(arg < m):
+            m = arg
+    return m * 2 / 9.81 
+
 def RunDesign():
     C1 = 6.0828
-    dowel =  Pin(0.0025, 0.0610, 17000000000, 117000000, 23000000)
-    beamBottom = Beam(0.0032, 0.03, 3370000000, np.array([0,0]), np.array([0.3,0]), 2000000, 17100000)
-    print('Pin Shear: ' + str(dowel.PinShearForce(2, C1)))
-    print('Rupture: ' + str(beamBottom.RuptureForce(dowel, C1)))
-    print('Buckling: ' + str(beamBottom.BucklingForce(C1)))
+    dowel =  Pin(0.0032, 0.0610, 17000000000, 117000000, 23000000)
+    beamBottom = Beam(0.0034, 0.015, 3370000000, np.array([0,0]), np.array([0.3,0]), 2000000, 17100000)
+    PinShearForce = dowel.PinShearForce(2, C1)
+    RuptureForce = beamBottom.RuptureForce(dowel, C1)
+    BucklingForce = beamBottom.BucklingForce(C1)
     dowel.changeLength(0.01)
-    print('Bending: ' + str(dowel.BendingForce()))
-    print('Tearing: ' + str(beamBottom.TearingForce(0.01, C1)))
-    print('Bearing: ' + str(beamBottom.BearingForce(C1)))
+    BendingForce = dowel.BendingForce()
+    TearingForce = beamBottom.TearingForce(0.01, C1)
+    BearingForce = beamBottom.BearingForce(C1)
+    
+    print('Pin Shear: ' + str(PinShearForce))
+    print('Rupture: ' + str(RuptureForce))
+    print('Buckling: ' + str(BucklingForce))
+    print('Bending: ' + str(BendingForce))
+    print('Tearing: ' + str(TearingForce))
+    print('Bearing: ' + str(BearingForce))
+
+    print('Breaking Force is ' + str(MaximumWeight(PinShearForce, RuptureForce, BucklingForce, BendingForce, TearingForce, BearingForce)))
 
 RunDesign()
